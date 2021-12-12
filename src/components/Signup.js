@@ -34,7 +34,7 @@ export default function Signup() {
 
     return (
         <>
-            <div className='signup-form-container'>
+            <div className='form-container'>
                 <h2>Sign Up</h2>
                 {error && <h3>{error}</h3>}
                 <form onSubmit={handleSubmit}>

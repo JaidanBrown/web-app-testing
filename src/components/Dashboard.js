@@ -1,6 +1,5 @@
 import React from 'react'
 import { useAuth } from '../contexts/AuthContext';
-
 import { useNavigate } from 'react-router-dom';
 
 export default function Dashboard() {
@@ -19,6 +18,7 @@ export default function Dashboard() {
 
     return (
         <>
+            <div><h2>Name</h2>{currentUser.displayName}</div>
             <button onClick={handleLogout}>Logout</button>
         </>
     )
